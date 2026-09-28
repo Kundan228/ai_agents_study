@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "guardrailed-llm-demo"
+version = "0.1.0"
+description = "Simple free LLM Q&A system with input and output guardrails"
+authors = ["AI Demo"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+transformers = ">=4.40.0"
+torch = ">=2.1.0"
+sentencepiece = ">=0.1.99"
+jupyter = ">=1.0.0"
+ipykernel = ">=6.0.0"
+
+[tool.poetry.group.dev.dependencies]
+notebook = ">=7.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
